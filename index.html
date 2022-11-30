@@ -1,42 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./assets/main.js"></script>
-    <title>jean's stupid</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    #myVideo {
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(0.5) brightness(0.3);
     
-    * {
-    scroll-behavior: smooth;
-   
-}
-::-webkit-scrollbar {
-    background: 0 0;
-    width: 8px;
-}
-::-webkit-scrollbar-thumb {
-    background: #202020;
-    border-radius: 105px;
 }
 
-    </style>
-</head>
-<body class="bg-[#1d1d1d]">
+   #text {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
     
-<div class="min-h-screen flex flex-col justify-center items-center"> 
-    <a href="./downloads.html">
-        <h1 class="font-semibold text-7xl text-center text-gray-200 hover:text-gray-300">mystupid<strong class="font-bold text-indigo-400 hover:text-indigo-500">.live</strong></h1></a>
-   
-       
-      </div>
-      
-      <footer class=""><div class="max-w-3xl mx-auto text-center px-16 pt-10 pb-4 text-gray-200"><strong><a href="#/" class="router-link-active router-link-exact-active" aria-current="page">
-        mystupid.live
-      </a></strong>
-      <p class="mb-4">A powerful website to downloads Minecraft Hacks Clients</p>
-   </p></div></footer>
-      
+    z-index: 99;
+
+   }
+   .title {
+    color: #AFFF68;
+   }
+
+</style>
+<body>
+    <section id="text">
+        <div class="w-full min-h-screen flex flex-col justify-center p-16">
+            <h1 class="text-7xl font-extrabold title">KNIT CLIENT</h1>
+            <p class="text-gray-200 font-light text-2xl">The <span class="title">best</span> minecraft external client in the world</p>
+            <div class="w-full main-h-screen justify-right pt-5">
+            <button type="button" class="title border border-lime-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+                <svg aria-hidden="true" class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+                Buy now
+              </button>
+              <button type="button" class="title border border-lime-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 -ml-1 w-5 h-5" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                  </svg>
+                Discord
+              </button>
+              </div>
+        </div>
+    </section>
+    <video autoplay muted loop id="myVideo">
+        <source src="clean.mp4" type="video/mp4">
+      </video>
+
+     
 </body>
 </html>
