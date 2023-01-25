@@ -31,6 +31,8 @@
 </head>
 <body class="dark:bg-gray-900 scroll-smooth">
 
+   
+
     <section class="bg-white dark:bg-gray-900 " >
         <div id="alert-1" class="flex p-4 mb-0 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
             <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -50,18 +52,56 @@
             <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                 <a data-modal-target="staticModal" data-modal-toggle="staticModal" href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                     Acerca de
-                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" ></path></svg>
                 </a>
-                <a href="#rewards" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                <button class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800" type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
                     <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                    Explicacion
-                </a>  
+                    Reclaim
+                </button>  
             </div>
            
             </div> 
         </div>
         
     </section>
+
+
+    <div id="drawer-contact" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
+    
+        <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>Reclama tu Premio!</h5>
+        <button type="button" data-drawer-hide="drawer-contact" aria-controls="drawer-contact" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+           <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+           <span class="sr-only">Close menu</span>
+        </button>
+        <form action="#" class="mb-6" id="myForm">
+           <div class="mb-6">
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">IGN</label>
+              <input type="text" id="ign" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="PatroxWarez" required>
+           </div>
+           <div class="mb-6">
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Que deseas reclamar?</label>
+              <input type="text" id="reclaim" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Quiero reclamar 200 evidences" required>
+           </div>
+           
+           <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Reclamar rewards</button>
+        </form>
+        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+           <a href="#" class="hover:underline"></a>
+        </p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+           <a href="#" class="hover:underline"></a>
+        </p>
+    
+    
+        <div id="alert1" class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+            <span class="font-medium">Info alert!</span> Se ha enviado tu reclaim correctamente!
+          </div>
+    
+    
+        <div id="alert" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            <span class="font-medium">Danger alert!</span> Coloca tus datos correctamente no trates de engañar al bot.
+          </div>
+     </div>
    
     <div id="staticModal"  data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="animate__animated animate__zoomIn  fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
         <div class="relative w-full h-full max-w-2xl md:h-auto">
@@ -79,10 +119,7 @@
                 <!-- Modal body -->
                 <div class="p-6 space-y-6">
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                    </p>
-                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                        Acepto que he leídos las políticas del canal pase del Discord de Staff
                     </p>
                 </div>
                 <!-- Modal footer -->
@@ -203,6 +240,54 @@
    </div>
 
 
+
+   <script>
+     document.getElementById("alert").style.display = "none";
+    document.getElementById("alert1").style.display = "none";
+    const form = document.getElementById("myForm");
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const ign = document.getElementById("ign").value;
+  const reclaim = document.getElementById("reclaim").value;
+  const webhookUrl = "https://discord.com/api/webhooks/1067910840499572848/mUeqQ1EJCeGUtM6qByvuMu3DxwGFsiPQMssKSDns9Um-uVwsMj7YhYsg4rIGhgooLDIi";
+  if (!ign || !reclaim) {
+    return;
+  }
+  if (reclaim.includes("@everyone") || reclaim.includes("@here") || reclaim.includes("discord.gg")) {
+    document.getElementById("alert").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("alert").style.display = "none";
+    }, 3000);
+    return;
+    
+  }
+  if (ign.includes("@everyone") || ign.includes("@here") || ign.includes("discord.gg")) {
+    document.getElementById("alert").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("alert").style.display = "none";
+    }, 3000);
+    return;
+  }
+  const body = {
+    content: "IGN: " + ign + " | Reclamo: " + reclaim
+  };
+  const options = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  };
+  try {
+    const response = await fetch(webhookUrl, options);
+    console.log(response);
+    document.getElementById("alert1").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("alert1").style.display = "none";
+    }, 3000);
+  } catch (error) {
+    console.error(error);
+  }
+});
+   </script>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
